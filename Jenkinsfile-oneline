@@ -4,16 +4,4 @@ library identifier: 'jenkins_zh@master', retriever: modernSCM([
     traits: [[$class: 'jenkins.plugins.git.traits.BranchDiscoveryTrait']]
 ])
 
-pipeline {
-    agent any
-
-    stages {
-        stage('Demo') {
-            steps {
-                script {
-                    mvn.fake()
-                }
-            }
-        }
-    }
-}
+pip()
