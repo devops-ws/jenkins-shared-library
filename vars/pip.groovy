@@ -4,8 +4,7 @@ def call() {
 
         stages {
             stage('Demo') {
-                steps {
-                    echo "hello, I'm from a shared-library"
+                    println "hello, I'm from a shared-library"
                 }
             }
         }
