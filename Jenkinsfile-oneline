@@ -5,18 +5,4 @@
 // ])
 
 @Library('devops-ws-demo') _
-//@Library('devops-ws-demo@test') _
-
-pipeline {
-    agent any
-
-    stages {
-        stage('Demo') {
-            steps {
-                script {
-                    mvn.fake()
-                }
-            }
-        }
-    }
-}
+pip()
